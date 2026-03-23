@@ -18,6 +18,7 @@ const navigation = [
     ],
   },
   { name: "Industries", href: "/industries" },
+  { name: "Rentals", href: "/rentals" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
