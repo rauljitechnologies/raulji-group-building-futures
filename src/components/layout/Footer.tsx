@@ -111,14 +111,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <a href="tel:+919876543210" className="text-secondary-foreground/70 hover:text-primary transition-colors">
-                  +91 98765 43210
+                <a href="tel:+918511187689" className="text-secondary-foreground/70 hover:text-primary transition-colors">
+                  +91 85111 87689
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:info@rauljigroup.com" className="text-secondary-foreground/70 hover:text-primary transition-colors">
-                  info@rauljigroup.com
+                <a href="mailto:info@raulji.com" className="text-secondary-foreground/70 hover:text-primary transition-colors">
+                  info@raulji.com
                 </a>
               </li>
             </ul>

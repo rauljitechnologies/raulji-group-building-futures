@@ -172,7 +172,7 @@ const Rentals = () => {
           "name": "Raulji Group - Computer Rental Services Vadodara",
           "description": "Best computer, laptop & monitor rental services in Vadodara. Affordable daily, weekly & monthly rentals with free delivery. Pan-India delivery available.",
           "url": "https://raulji.lovable.app/rentals",
-          "telephone": "+919876543210",
+          "telephone": "+918511187689",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Vadodara",
@@ -185,7 +185,7 @@ const Rentals = () => {
           ],
           "priceRange": "₹500 - ₹10,000/month",
           "openingHours": "Mo-Sa 09:00-19:00",
-          "sameAs": ["https://wa.me/919876543210"]
+          "sameAs": ["https://wa.me/918511187689"]
         })
       }} />
 
@@ -211,7 +211,7 @@ const Rentals = () => {
                 Perfect for offices, events, training, exams & more.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20computer%20rental%20in%20Vadodara" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/918511187689?text=Hi%2C%20I%20need%20computer%20rental%20in%20Vadodara" target="_blank" rel="noopener noreferrer">
                   <Button variant="hero" size="xl" className="w-full sm:w-auto">
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp Us Now
@@ -276,7 +276,7 @@ const Rentals = () => {
                       <span className="text-sm text-muted-foreground">Starting at</span>
                       <p className="text-2xl font-bold text-primary">{product.startingPrice}</p>
                     </div>
-                    <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20rent%20a%20" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/918511187689?text=Hi%2C%20I%20want%20to%20rent%20a%20" target="_blank" rel="noopener noreferrer">
                       <Button variant="hero" size="default">
                         Rent Now <ArrowRight className="w-4 h-4" />
                       </Button>
@@ -383,7 +383,7 @@ const Rentals = () => {
                       <div>
                         <label htmlFor="r-phone" className="block text-sm font-medium text-secondary mb-2">Phone / WhatsApp *</label>
                         <input type="tel" id="r-phone" name="phone" value={formData.phone} onChange={handleChange} required
-                          className="w-full px-4 py-3 rounded-xl border border-border bg-card focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="+91 98765 43210" />
+                          className="w-full px-4 py-3 rounded-xl border border-border bg-card focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="+91 85111 87689" />
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-6">
@@ -442,7 +442,7 @@ const Rentals = () => {
 
               {/* Sidebar */}
               <div className="space-y-6">
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20computer%20rental%20in%20Vadodara"
+                <a href="https://wa.me/918511187689?text=Hi%2C%20I%20need%20computer%20rental%20in%20Vadodara"
                   target="_blank" rel="noopener noreferrer"
                   className="block glass-card rounded-2xl p-6 bg-green-50 border-green-200 hover-lift">
                   <div className="flex items-center gap-4">
@@ -452,7 +452,7 @@ const Rentals = () => {
                     <div>
                       <h3 className="font-bold text-secondary">WhatsApp Us</h3>
                       <p className="text-sm text-muted-foreground">Instant reply guaranteed</p>
-                      <p className="text-primary font-semibold text-sm">+91 98765 43210</p>
+                      <p className="text-primary font-semibold text-sm">+91 85111 87689</p>
                     </div>
                   </div>
                 </a>
@@ -464,7 +464,7 @@ const Rentals = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-secondary mb-1">Call Us</h3>
-                      <a href="tel:+919876543210" className="text-muted-foreground text-sm hover:text-primary transition-colors block">+91 98765 43210</a>
+                      <a href="tel:+918511187689" className="text-muted-foreground text-sm hover:text-primary transition-colors block">+91 85111 87689</a>
                     </div>
                   </div>
                 </div>
@@ -476,7 +476,7 @@ const Rentals = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-secondary mb-1">Email Us</h3>
-                      <a href="mailto:rentals@rauljigroup.com" className="text-muted-foreground text-sm hover:text-primary transition-colors block">rentals@rauljigroup.com</a>
+                      <a href="mailto:info@raulji.com" className="text-muted-foreground text-sm hover:text-primary transition-colors block">info@raulji.com</a>
                     </div>
                   </div>
                 </div>
@@ -546,13 +546,13 @@ const Rentals = () => {
                   Free delivery in Vadodara. Pan-India shipping available.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20computer%20rental%20in%20Vadodara" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/918511187689?text=Hi%2C%20I%20need%20computer%20rental%20in%20Vadodara" target="_blank" rel="noopener noreferrer">
                     <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
                       <MessageCircle className="w-5 h-5" />
                       Chat on WhatsApp
                     </Button>
                   </a>
-                  <a href="tel:+919876543210">
+                  <a href="tel:+918511187689">
                     <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
                       <Phone className="w-5 h-5" />
                       Call Now
@@ -567,7 +567,7 @@ const Rentals = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20computer%20rental%20in%20Vadodara"
+        href="https://wa.me/918511187689?text=Hi%2C%20I%20need%20computer%20rental%20in%20Vadodara"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-elevated hover:scale-110 transition-transform animate-fade-up"
