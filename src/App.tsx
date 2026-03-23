@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Industries from "./pages/Industries";
 import Blog from "./pages/Blog";
+import Rentals from "./pages/Rentals";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
