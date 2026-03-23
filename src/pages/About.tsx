@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import rauljiLogo from "@/assets/raulji-logo.webp";
 import { 
   Target, 
   Eye, 
@@ -129,9 +130,7 @@ const About = () => {
                   succeed, we succeed."
                 </blockquote>
                 <div className="flex items-center justify-center gap-4">
-                  <div className="w-16 h-16 brand-gradient rounded-full flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold text-2xl">DR</span>
-                  </div>
+                  <img src={rauljiLogo} alt="Dharmendrasinh Raulji" className="w-16 h-16 rounded-full object-contain" />
                   <div className="text-left">
                     <div className="text-lg font-bold text-secondary">Dharmendrasinh Raulji</div>
                     <div className="text-muted-foreground">Chairman, Raulji Group</div>
