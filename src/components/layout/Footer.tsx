@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import rauljiLogo from "@/assets/raulji-logo.webp";
 
 const footerLinks = {
   company: [
