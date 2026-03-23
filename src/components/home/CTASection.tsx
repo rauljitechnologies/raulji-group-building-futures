@@ -40,7 +40,7 @@ export function CTASection() {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918511187689"
                   className="flex items-center gap-4 p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
                 >
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -49,12 +49,12 @@ export function CTASection() {
                   <div>
                     <div className="text-sm text-primary-foreground/70">Call Us</div>
                     <div className="text-lg font-semibold text-primary-foreground">
-                      +91 98765 43210
+                      +91 85111 87689
                     </div>
                   </div>
                 </a>
                 <a
-                  href="mailto:info@rauljigroup.com"
+                  href="mailto:info@raulji.com"
                   className="flex items-center gap-4 p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
                 >
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -63,7 +63,7 @@ export function CTASection() {
                   <div>
                     <div className="text-sm text-primary-foreground/70">Email Us</div>
                     <div className="text-lg font-semibold text-primary-foreground">
-                      info@rauljigroup.com
+                      info@raulji.com
                     </div>
                   </div>
                 </a>

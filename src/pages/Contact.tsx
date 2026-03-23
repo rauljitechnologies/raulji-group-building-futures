@@ -55,14 +55,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 98765 43210", "+91 98765 43211"],
-      action: "tel:+919876543210",
+      details: ["+91 85111 87689", "+91 85111 87689"],
+      action: "tel:+918511187689",
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@rauljigroup.com", "support@rauljigroup.com"],
-      action: "mailto:info@rauljigroup.com",
+      details: ["info@raulji.com", "rauljigroup@gmail.com"],
+      action: "mailto:info@raulji.com",
     },
     {
       icon: MapPin,
@@ -169,7 +169,7 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-xl border border-border bg-card focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 85111 87689"
                         />
                       </div>
                       <div>
@@ -274,7 +274,7 @@ const Contact = () => {
 
                 {/* WhatsApp CTA */}
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/918511187689"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block glass-card rounded-2xl p-6 bg-green-50 border-green-200 hover-lift"
