@@ -36,9 +36,7 @@ export function Header() {
       <nav className="container-wide flex items-center justify-between py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 brand-gradient rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-xl">R</span>
-          </div>
+          <img src={rauljiLogo} alt="Raulji Group Logo" className="w-10 h-10 rounded-lg object-contain" />
           <div className="flex flex-col">
             <span className="text-xl font-bold text-secondary">Raulji Group</span>
             <span className="text-xs text-muted-foreground hidden sm:block">Building Futures</span>

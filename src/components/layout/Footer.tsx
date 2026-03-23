@@ -38,9 +38,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-2xl">R</span>
-              </div>
+              <img src={rauljiLogo} alt="Raulji Group Logo" className="w-12 h-12 rounded-xl object-contain" />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-secondary-foreground">Raulji Group</span>
                 <span className="text-sm text-secondary-foreground/70">Building Futures</span>
