@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ServiceLeadForm } from "@/components/services/ServiceLeadForm";
@@ -34,6 +35,12 @@ const benefits = [
 const BusinessConsulting = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Business Consulting Services Vadodara | Company Registration, GST, Compliance — Raulji Group"
+        description="Expert business consulting in Vadodara, Gujarat. Company registration (Pvt Ltd, LLP, OPC), GST filing, startup India registration, compliance management & growth advisory. Call +91 8511187689."
+        canonical="https://www.raulji.com/services/consulting"
+        keywords="business consulting Vadodara, company registration Gujarat, GST registration Vadodara, startup India registration, business strategy Gujarat"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
@@ -41,9 +48,18 @@ const BusinessConsulting = () => {
           "@type": "Service",
           "name": "Business Consulting Services - Raulji Group",
           "description": "Company registration, business strategy, compliance management, and growth advisory services in Vadodara, Gujarat.",
-          "provider": { "@type": "Organization", "name": "Raulji Group" },
+          "url": "https://www.raulji.com/services/consulting",
+          "provider": { "@type": "Organization", "name": "Raulji Group", "url": "https://www.raulji.com" },
           "areaServed": { "@type": "State", "name": "Gujarat" },
-          "serviceType": "Business Consulting"
+          "serviceType": "Business Consulting",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.raulji.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.raulji.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Business Consulting", "item": "https://www.raulji.com/services/consulting"}
+            ]
+          }
         })
       }} />
       <main>

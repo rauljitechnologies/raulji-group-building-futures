@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
@@ -23,13 +24,19 @@ const groupServices = [
 const About = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="About Raulji Group | Founded by Raulji Brothers & Sons — Vadodara, Gujarat"
+        description="Learn about Raulji Group — a dynamic holding company founded by Dharmendrasinh Raulji in Vadodara, Gujarat. 15+ years, 500+ clients, 7+ business verticals across India."
+        canonical="https://www.raulji.com/about"
+        keywords="about Raulji Group, Dharmendrasinh Raulji, Raulji Brothers and Sons, holding company Vadodara"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org", "@type": "AboutPage",
           "name": "About Raulji Group - Founded by Raulji Brothers and Sons",
           "description": "Raulji Group is a dynamic parent holding company driving growth across multiple sectors through innovation, strategy, and trust. Founded by Raulji Brothers and Sons, led by Dharmendrasinh Raulji.",
-          "url": "https://raulji.lovable.app/about"
+          "url": "https://www.raulji.com/about"
         })
       }} />
       <main>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { submitLead } from "@/lib/leadApi";
@@ -73,7 +74,40 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Contact Raulji Group | Free Business Consultation — Vadodara, Gujarat"
+        description="Contact Raulji Group for a free consultation. Call +91 8511187689 or email rauljigroup@gmail.com. Located in Vadodara, Gujarat. Mon–Sat 9AM–7PM."
+        canonical="https://www.raulji.com/contact"
+        keywords="contact Raulji Group, business consultation Vadodara, free consultation Gujarat"
+      />
       <Header />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Raulji Group",
+        "description": "Contact Raulji Group for free business consultation in Vadodara, Gujarat.",
+        "url": "https://www.raulji.com/contact",
+        "mainEntity": {
+          "@type": "LocalBusiness",
+          "name": "Raulji Group",
+          "telephone": "+918511187689",
+          "email": "rauljigroup@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Vadodara",
+            "addressRegion": "Gujarat",
+            "addressCountry": "IN"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+              "opens": "09:00",
+              "closes": "19:00"
+            }
+          ]
+        }
+      })}} />
       <main>
         <section className="pt-40 pb-20 bg-hero-gradient">
           <div className="container-wide">

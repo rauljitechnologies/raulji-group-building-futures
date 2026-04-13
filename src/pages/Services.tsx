@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
@@ -109,7 +110,28 @@ const services = [
 const Services = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Our Services | Business Consulting, IT, Insurance & More — Raulji Group"
+        description="Explore Raulji Group's complete services: business consulting, IT & web development, insurance, finance advisory, legal support, digital marketing, and land investment in Gujarat."
+        canonical="https://www.raulji.com/services"
+        keywords="business services Vadodara, IT services Gujarat, insurance advisory India, finance advisory Gujarat, legal services Vadodara"
+      />
       <Header />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Raulji Group Services",
+        "url": "https://www.raulji.com/services",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Business Consulting", "url": "https://www.raulji.com/services/consulting"},
+          {"@type": "ListItem", "position": 2, "name": "IT Services", "url": "https://www.raulji.com/services/it"},
+          {"@type": "ListItem", "position": 3, "name": "Insurance Services", "url": "https://www.raulji.com/services/insurance"},
+          {"@type": "ListItem", "position": 4, "name": "Finance Advisory", "url": "https://www.raulji.com/services/finance"},
+          {"@type": "ListItem", "position": 5, "name": "Legal Advisory", "url": "https://www.raulji.com/services/legal"},
+          {"@type": "ListItem", "position": 6, "name": "Digital Solutions", "url": "https://www.raulji.com/services/digital"},
+          {"@type": "ListItem", "position": 7, "name": "Land Investment", "url": "https://www.raulji.com/services/land-investment"}
+        ]
+      })}} />
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-hero-gradient">

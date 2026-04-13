@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import {
@@ -162,6 +163,12 @@ const Rentals = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Computer & Laptop Rental Vadodara | Monitor, Desktop Hire — Raulji Group"
+        description="Best computer, laptop & monitor rental in Vadodara from ₹500/month. Free delivery, same-day setup, 24/7 support. Corporate, events & individual rentals. Call +91 8511187689."
+        canonical="https://www.raulji.com/rentals"
+        keywords="computer rental Vadodara, laptop rental Vadodara, monitor rental Gujarat, IT rental services, desktop hire Vadodara"
+      />
       <Header />
 
       {/* JSON-LD Structured Data */}
@@ -171,7 +178,7 @@ const Rentals = () => {
           "@type": "LocalBusiness",
           "name": "Raulji Group - Computer Rental Services Vadodara",
           "description": "Best computer, laptop & monitor rental services in Vadodara. Affordable daily, weekly & monthly rentals with free delivery. Pan-India delivery available.",
-          "url": "https://raulji.lovable.app/rentals",
+          "url": "https://www.raulji.com/rentals",
           "telephone": "+918511187689",
           "address": {
             "@type": "PostalAddress",
@@ -188,6 +195,44 @@ const Rentals = () => {
           "sameAs": ["https://wa.me/918511187689"]
         })
       }} />
+
+      {/* FAQ Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the minimum rental period for computers in Vadodara?",
+            "acceptedAnswer": {"@type": "Answer", "text": "We offer flexible rental plans starting from 1 day. Daily, weekly, and monthly rental options are available for all devices."}
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide delivery across Vadodara?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes! We provide free doorstep delivery and pickup across all areas of Vadodara including Alkapuri, Fatehgunj, Manjalpur, Gotri, Waghodia Road, Harni, and more."}
+          },
+          {
+            "@type": "Question",
+            "name": "Is Pan-India delivery available?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes, we offer Pan-India delivery for bulk orders. Shipping charges may apply for locations outside Vadodara."}
+          },
+          {
+            "@type": "Question",
+            "name": "What if a rented device stops working?",
+            "acceptedAnswer": {"@type": "Answer", "text": "We provide immediate replacement and 24/7 technical support. Just call or WhatsApp us and we'll resolve it within hours."}
+          },
+          {
+            "@type": "Question",
+            "name": "Can I rent computers for events or exams?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Absolutely! We specialize in bulk computer rentals for events, conferences, exams, and training programs in Vadodara and across Gujarat."}
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer online ordering?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes, you can order online through our website or simply WhatsApp us your requirements. We'll arrange everything for you."}
+          }
+        ]
+      })}} />
 
       <main>
         {/* Hero Section */}

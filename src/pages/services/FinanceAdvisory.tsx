@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ServiceLeadForm } from "@/components/services/ServiceLeadForm";
@@ -26,15 +27,30 @@ const services = [
 const FinanceAdvisory = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Finance Advisory & Tax Services Vadodara | GST, Investment, Wealth Management — Raulji Group"
+        description="Expert finance advisory in Vadodara, Gujarat. Income tax filing, GST registration & returns, investment advisory, wealth management, mutual funds, audit & business valuation. Call +91 8511187689."
+        canonical="https://www.raulji.com/services/finance"
+        keywords="finance advisory Vadodara, tax filing Gujarat, GST services Vadodara, investment advisory Gujarat, wealth management Vadodara"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org", "@type": "Service",
           "name": "Finance Advisory & Tax Services - Raulji Group",
           "description": "Tax planning, GST filing, investment advisory, wealth management, and audit services in Vadodara, Gujarat.",
-          "provider": { "@type": "Organization", "name": "Raulji Group" },
+          "url": "https://www.raulji.com/services/finance",
+          "provider": { "@type": "Organization", "name": "Raulji Group", "url": "https://www.raulji.com" },
           "areaServed": { "@type": "State", "name": "Gujarat" },
-          "serviceType": "Finance Advisory"
+          "serviceType": "Finance Advisory",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.raulji.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.raulji.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Finance Advisory", "item": "https://www.raulji.com/services/finance"}
+            ]
+          }
         })
       }} />
       <main>

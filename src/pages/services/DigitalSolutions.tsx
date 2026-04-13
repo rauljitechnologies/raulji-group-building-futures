@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ServiceLeadForm } from "@/components/services/ServiceLeadForm";
@@ -26,15 +27,30 @@ const digitalServices = [
 const DigitalSolutions = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Digital Marketing & SEO Services Vadodara | Website, Branding, Ads — Raulji Group"
+        description="Digital marketing & web solutions by Raulji Group in Vadodara. Website development, Shopify, Google Ads, SEO, social media management, branding & UI/UX design across India. Call +91 8511187689."
+        canonical="https://www.raulji.com/services/digital"
+        keywords="digital marketing Vadodara, SEO services Gujarat, Google Ads Vadodara, website development Gujarat, social media marketing India"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org", "@type": "Service",
           "name": "Digital Marketing & Web Solutions - Raulji Group",
           "description": "Website development, eCommerce, SEO, digital marketing, and branding services in Vadodara, Gujarat.",
-          "provider": { "@type": "Organization", "name": "Raulji Group" },
+          "url": "https://www.raulji.com/services/digital",
+          "provider": { "@type": "Organization", "name": "Raulji Group", "url": "https://www.raulji.com" },
           "areaServed": { "@type": "Country", "name": "India" },
-          "serviceType": "Digital Solutions"
+          "serviceType": "Digital Solutions",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.raulji.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.raulji.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Digital Solutions", "item": "https://www.raulji.com/services/digital"}
+            ]
+          }
         })
       }} />
       <main>

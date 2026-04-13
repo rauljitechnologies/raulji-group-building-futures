@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
@@ -103,6 +104,12 @@ const industries = [
 const Industries = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Industries We Serve | Startups, SMEs, Enterprises & Real Estate — Raulji Group"
+        description="Raulji Group serves startups, SMEs, large enterprises, real estate, and more across Gujarat and India with specialized consulting, IT, insurance, and legal solutions."
+        canonical="https://www.raulji.com/industries"
+        keywords="industries served Raulji Group, startup consulting Gujarat, SME services India, enterprise solutions Vadodara"
+      />
       <Header />
       <main>
         {/* Hero Section */}

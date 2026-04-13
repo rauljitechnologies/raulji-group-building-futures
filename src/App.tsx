@@ -20,6 +20,12 @@ import Rentals from "./pages/Rentals";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Team from "./pages/Team";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import BlogPost from "./pages/BlogPost";
+import AdminLogin from "./pages/admin/Login";
+import AdminDashboard from "./pages/admin/Dashboard";
+import BlogEditor from "./pages/admin/BlogEditor";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +52,12 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/rentals" element={<Rentals />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/blog/:id" element={<BlogEditor />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

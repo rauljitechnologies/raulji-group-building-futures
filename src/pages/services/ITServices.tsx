@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ServiceLeadForm } from "@/components/services/ServiceLeadForm";
@@ -29,15 +30,30 @@ const techStack = [
 const ITServices = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="IT Services & Web Development Vadodara | Mobile Apps, SaaS, AI Solutions — Raulji Group"
+        description="Custom website development, mobile apps, SaaS, AI & automation, cloud solutions by Raulji Group in Vadodara, Gujarat. Full-stack React, Node.js, Flutter development. Call +91 8511187689."
+        canonical="https://www.raulji.com/services/it"
+        keywords="IT services Vadodara, web development Gujarat, mobile app development India, SaaS development Vadodara, AI automation Gujarat"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org", "@type": "Service",
           "name": "IT Services, Web & App Development - Raulji Group",
           "description": "Custom website development, mobile app development, SaaS development, AI & automation, cloud solutions in Vadodara, Gujarat, India.",
-          "provider": { "@type": "Organization", "name": "Raulji Group", "telephone": "+918511187689", "email": "rauljigroup@gmail.com" },
+          "url": "https://www.raulji.com/services/it",
+          "provider": { "@type": "Organization", "name": "Raulji Group", "url": "https://www.raulji.com", "telephone": "+918511187689", "email": "rauljigroup@gmail.com" },
           "areaServed": { "@type": "Country", "name": "India" },
-          "serviceType": ["Website Development", "Mobile App Development", "SaaS Development", "AI & Automation", "Cloud Solutions"]
+          "serviceType": ["Website Development", "Mobile App Development", "SaaS Development", "AI & Automation", "Cloud Solutions"],
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.raulji.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.raulji.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "IT Services", "item": "https://www.raulji.com/services/it"}
+            ]
+          }
         })
       }} />
       <main>

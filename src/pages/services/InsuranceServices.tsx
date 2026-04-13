@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ServiceLeadForm } from "@/components/services/ServiceLeadForm";
@@ -30,15 +31,30 @@ const insuranceTypes = [
 const InsuranceServices = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Insurance Services Vadodara | General, Health, Life, Motor Insurance — Raulji Group"
+        description="Complete insurance advisory in Vadodara, Gujarat. General insurance, medical & health insurance, life insurance, motor, commercial, property & industrial insurance with claims assistance. Call +91 8511187689."
+        canonical="https://www.raulji.com/services/insurance"
+        keywords="insurance Vadodara, health insurance Gujarat, motor insurance Vadodara, life insurance Gujarat, general insurance Vadodara, property insurance Gujarat"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org", "@type": "Service",
           "name": "Insurance Services - General, Medical, Life, Motor | Raulji Group Vadodara",
           "description": "Complete insurance services including general insurance, medical/health insurance, life insurance, motor, commercial, property, and industrial insurance with claims assistance in Vadodara, Gujarat.",
-          "provider": { "@type": "Organization", "name": "Raulji Group", "telephone": "+918511187689", "email": "rauljigroup@gmail.com" },
+          "url": "https://www.raulji.com/services/insurance",
+          "provider": { "@type": "Organization", "name": "Raulji Group", "url": "https://www.raulji.com", "telephone": "+918511187689", "email": "rauljigroup@gmail.com" },
           "areaServed": { "@type": "State", "name": "Gujarat" },
-          "serviceType": ["General Insurance", "Medical Insurance", "Health Insurance", "Life Insurance", "Motor Insurance"]
+          "serviceType": ["General Insurance", "Medical Insurance", "Health Insurance", "Life Insurance", "Motor Insurance"],
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.raulji.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.raulji.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Insurance Services", "item": "https://www.raulji.com/services/insurance"}
+            ]
+          }
         })
       }} />
       <main>

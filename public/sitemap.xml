@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://raulji.lovable.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://raulji.lovable.app/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://raulji.lovable.app/services/consulting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/services/it</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/services/insurance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/services/finance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/services/legal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/services/digital</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/services/land-investment</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/industries</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://raulji.lovable.app/team</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://raulji.lovable.app/blog</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://raulji.lovable.app/rentals</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://raulji.lovable.app/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.raulji.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.raulji.com/services/consulting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/services/it</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/services/insurance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/services/finance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/services/legal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/services/digital</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/services/land-investment</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/industries</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.raulji.com/team</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.raulji.com/blog</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/rentals</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.raulji.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.raulji.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.raulji.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

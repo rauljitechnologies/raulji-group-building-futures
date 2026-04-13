@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, User, Clock } from "lucide-react";
@@ -55,6 +56,12 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Blog | Business, IT, Insurance & Legal Insights — Raulji Group"
+        description="Expert insights on business consulting, IT trends, insurance awareness, property & real estate, legal compliance, and digital transformation by Raulji Group, Vadodara."
+        canonical="https://www.raulji.com/blog"
+        keywords="business blog India, insurance tips Gujarat, IT trends Vadodara, legal compliance blog, Raulji Group blog"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
@@ -62,7 +69,7 @@ const Blog = () => {
           "name": "Raulji Group Blog - Business, Technology & Insurance Insights",
           "description": "Expert insights on business consulting, IT, insurance, finance, and legal topics by Raulji Group.",
           "publisher": { "@type": "Organization", "name": "Raulji Group" },
-          "url": "https://raulji.lovable.app/blog"
+          "url": "https://www.raulji.com/blog"
         })
       }} />
       <main>

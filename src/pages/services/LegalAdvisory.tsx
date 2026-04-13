@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ServiceLeadForm } from "@/components/services/ServiceLeadForm";
@@ -26,15 +27,30 @@ const legalServices = [
 const LegalAdvisory = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Legal Advisory Services Vadodara | Corporate Law, Trademark, Compliance — Raulji Group"
+        description="Expert legal advisory in Vadodara, Gujarat. Corporate law, contract drafting, trademark & IP registration, dispute resolution, labour law compliance & due diligence. Call +91 8511187689."
+        canonical="https://www.raulji.com/services/legal"
+        keywords="legal advisory Vadodara, corporate law Gujarat, trademark registration Vadodara, contract drafting Gujarat, legal compliance India"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org", "@type": "Service",
           "name": "Legal Advisory Services - Raulji Group",
           "description": "Corporate law, contract drafting, IP registration, dispute resolution, and regulatory compliance services in Vadodara.",
-          "provider": { "@type": "Organization", "name": "Raulji Group" },
+          "url": "https://www.raulji.com/services/legal",
+          "provider": { "@type": "Organization", "name": "Raulji Group", "url": "https://www.raulji.com" },
           "areaServed": { "@type": "State", "name": "Gujarat" },
-          "serviceType": "Legal Advisory"
+          "serviceType": "Legal Advisory",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.raulji.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.raulji.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Legal Advisory", "item": "https://www.raulji.com/services/legal"}
+            ]
+          }
         })
       }} />
       <main>

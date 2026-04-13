@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SEOMeta } from "@/components/layout/SEOMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ServiceLeadForm } from "@/components/services/ServiceLeadForm";
@@ -40,18 +41,33 @@ const whyInvest = [
 const LandInvestment = () => {
   return (
     <div className="min-h-screen">
+      <SEOMeta
+        title="Land Investment Advisory Vadodara & Anand | Agricultural, NA, Commercial Land — Raulji Group"
+        description="Expert land investment advisory in Vadodara & Anand districts, Gujarat. Agricultural, NA, residential & commercial land investment with legal due diligence, title verification & documentation support."
+        canonical="https://www.raulji.com/services/land-investment"
+        keywords="land investment Vadodara, land investment Anand Gujarat, agricultural land investment, NA plot Gujarat, commercial land Vadodara, DMIC corridor land"
+      />
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org", "@type": "Service",
           "name": "Land Investment Services in Vadodara & Anand - Raulji Group",
           "description": "Expert land investment advisory, property due diligence, and documentation support for agricultural, NA, and commercial land in Vadodara and Anand districts, Gujarat.",
-          "provider": { "@type": "Organization", "name": "Raulji Group", "telephone": "+918511187689" },
+          "url": "https://www.raulji.com/services/land-investment",
+          "provider": { "@type": "Organization", "name": "Raulji Group", "url": "https://www.raulji.com", "telephone": "+918511187689" },
           "areaServed": [
             { "@type": "AdministrativeArea", "name": "Vadodara District" },
             { "@type": "AdministrativeArea", "name": "Anand District" }
           ],
-          "serviceType": "Land Investment Advisory"
+          "serviceType": "Land Investment Advisory",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.raulji.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.raulji.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Land Investment", "item": "https://www.raulji.com/services/land-investment"}
+            ]
+          }
         })
       }} />
       <main>
