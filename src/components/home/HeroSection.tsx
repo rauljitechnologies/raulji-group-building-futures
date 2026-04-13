@@ -4,7 +4,7 @@ import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-32 pb-16 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-hero-gradient" />
       <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
