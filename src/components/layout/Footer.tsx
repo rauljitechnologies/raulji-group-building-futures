@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
-import rauljiLogo from "@/assets/raulji-logo.webp";
+import logoImg from "@/assets/Raulji_Group_Logo.png";
 
 const footerLinks = {
   company: [
     { name: "About Us", href: "/about" },
-    { name: "Our Team", href: "/about#team" },
-    { name: "Careers", href: "/careers" },
+    { name: "Our Team", href: "/team" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ],
   services: [
     { name: "Business Consulting", href: "/services/consulting" },
-    { name: "IT Services", href: "/services/it" },
-    { name: "Insurance & Property", href: "/services/insurance" },
+    { name: "IT & Digital Solutions", href: "/services/it" },
+    { name: "Insurance Services", href: "/services/insurance" },
     { name: "Finance Advisory", href: "/services/finance" },
+    { name: "Computer Rentals", href: "/rentals" },
   ],
   industries: [
     { name: "SMEs", href: "/industries#sme" },
@@ -21,32 +22,21 @@ const footerLinks = {
     { name: "Startups", href: "/industries#startups" },
     { name: "Real Estate", href: "/industries#realestate" },
   ],
-  resources: [
-    { name: "Blog", href: "/blog" },
-    { name: "Case Studies", href: "/case-studies" },
-    { name: "Insights", href: "/insights" },
-    { name: "FAQs", href: "/faqs" },
-  ],
 };
 
 export function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground">
-      {/* Main Footer */}
       <div className="container-wide section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <img src={rauljiLogo} alt="Raulji Group Logo" className="w-12 h-12 rounded-xl object-contain" />
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-secondary-foreground">Raulji Group</span>
-                <span className="text-sm text-secondary-foreground/70">Building Futures</span>
-              </div>
+              <img src={logoImg} alt="Raulji Group" className="h-10 w-auto brightness-0 invert" />
             </Link>
-            <p className="text-secondary-foreground/70 mb-6 max-w-sm">
-              A diversified holding company focused on long-term value creation, ethical leadership, 
-              innovation, and trust across multiple industries.
+            <p className="text-secondary-foreground/70 mb-4 max-w-sm">
+              One Stop Solution For Business — Company Registration, IT Services, Insurance, 
+              Finance Advisory, Legal & Compliance across India.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-secondary-foreground/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors">
@@ -61,7 +51,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links Columns */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-secondary-foreground">Company</h4>
             <ul className="space-y-3">
@@ -106,18 +95,24 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-secondary-foreground/70">Gujarat, India</span>
+                <span className="text-secondary-foreground/70">Vadodara, Gujarat, India</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a href="tel:+918511187689" className="text-secondary-foreground/70 hover:text-primary transition-colors">
-                  +91 85111 87689
+                  +91 8511187689
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:info@raulji.com" className="text-secondary-foreground/70 hover:text-primary transition-colors">
-                  info@raulji.com
+                <a href="mailto:rauljigroup@gmail.com" className="text-secondary-foreground/70 hover:text-primary transition-colors">
+                  rauljigroup@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-primary shrink-0" />
+                <a href="mailto:admin@raulji.com" className="text-secondary-foreground/70 hover:text-primary transition-colors">
+                  admin@raulji.com
                 </a>
               </li>
             </ul>
@@ -125,7 +120,6 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-secondary-foreground/10">
         <div className="container-wide py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-secondary-foreground/60 text-sm">

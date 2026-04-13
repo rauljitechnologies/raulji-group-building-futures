@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import rauljiLogo from "@/assets/raulji-logo.webp";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
+import logoImg from "@/assets/Raulji_Group_Logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -12,13 +12,16 @@ const navigation = [
     href: "/services",
     children: [
       { name: "Business Consulting", href: "/services/consulting" },
-      { name: "IT Services", href: "/services/it" },
-      { name: "Insurance & Property", href: "/services/insurance" },
+      { name: "IT & Digital Solutions", href: "/services/it" },
+      { name: "Insurance Services", href: "/services/insurance" },
       { name: "Finance Advisory", href: "/services/finance" },
-      { name: "Legal Advisory", href: "/services/legal" },
+      { name: "Legal & Compliance", href: "/services/legal" },
+      { name: "Digital Marketing", href: "/services/digital" },
+      { name: "Land Investment", href: "/services/land-investment" },
     ],
   },
   { name: "Industries", href: "/industries" },
+  { name: "Team", href: "/team" },
   { name: "Rentals", href: "/rentals" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
@@ -32,15 +35,27 @@ export function Header() {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/50">
-      <nav className="container-wide flex items-center justify-between py-4">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-3">
-          <img src={rauljiLogo} alt="Raulji Group Logo" className="w-10 h-10 rounded-lg object-contain" />
-          <div className="flex flex-col">
-            <span className="text-xl font-bold text-secondary">Raulji Group</span>
-            <span className="text-xs text-muted-foreground hidden sm:block">Building Futures</span>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-lg border-b border-border/50 shadow-sm">
+      {/* Top Bar */}
+      <div className="bg-secondary text-secondary-foreground">
+        <div className="container-wide flex items-center justify-between py-1.5 text-xs">
+          <div className="flex items-center gap-4">
+            <a href="tel:+918511187689" className="flex items-center gap-1 hover:text-primary transition-colors">
+              <Phone className="w-3 h-3" />
+              +91 8511187689
+            </a>
+            <a href="mailto:rauljigroup@gmail.com" className="hidden sm:block hover:text-primary transition-colors">
+              rauljigroup@gmail.com
+            </a>
           </div>
+          <span className="hidden md:block">One Stop Solution For Business</span>
+        </div>
+      </div>
+
+      <nav className="container-wide flex items-center justify-between py-3">
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logoImg} alt="Raulji Group Logo" className="h-9 sm:h-11 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -73,10 +88,9 @@ export function Header() {
                 </Link>
               )}
 
-              {/* Dropdown */}
               {item.children && (
                 <div
-                  className={`absolute top-full left-0 mt-1 w-56 glass-card rounded-xl p-2 shadow-elevated transition-all duration-200 ${
+                  className={`absolute top-full left-0 mt-1 w-56 bg-card rounded-xl p-2 shadow-elevated border border-border transition-all duration-200 ${
                     servicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                   }`}
                   onMouseEnter={() => setServicesOpen(true)}
@@ -99,9 +113,15 @@ export function Header() {
 
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
+          <a href="tel:+918511187689">
+            <Button variant="outline" size="sm" className="gap-2">
+              <Phone className="w-4 h-4" />
+              Call Now
+            </Button>
+          </a>
           <Link to="/contact">
             <Button variant="hero" size="default">
-              Get Started
+              Get Free Consultation
             </Button>
           </Link>
         </div>
@@ -117,7 +137,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden glass-card border-t border-border/50 animate-fade-in">
+        <div className="lg:hidden bg-card border-t border-border/50 animate-fade-in">
           <div className="container-wide py-4 space-y-2">
             {navigation.map((item) => (
               <div key={item.name}>
@@ -148,10 +168,16 @@ export function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-4">
+            <div className="pt-4 space-y-2">
+              <a href="tel:+918511187689" className="block">
+                <Button variant="outline" size="lg" className="w-full gap-2">
+                  <Phone className="w-4 h-4" />
+                  +91 8511187689
+                </Button>
+              </a>
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button variant="hero" size="lg" className="w-full">
-                  Get Started
+                  Get Free Consultation
                 </Button>
               </Link>
             </div>
